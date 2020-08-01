@@ -3,7 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component{
-  constructor(){
+  state = {
+    cantidad: 0
+  }
+  /* constructor(){
     super()
     
     const METHODS = [
@@ -17,15 +20,13 @@ class App extends React.Component{
     this.state = {
       cantidad: 0
     }
-  }
+  } */
 
-  agregar(){
-    this.setState({cantidad:this.state.cantidad+1})
-  }
+  agregar = () => this.setState({cantidad:this.state.cantidad+1})
+  
 
-  quitar(){
-    this.setState({cantidad:this.state.cantidad-1})
-  }
+  quitar = () => this.setState({cantidad:this.state.cantidad-1})
+  
   render(){
     return(
       <div className="App">
