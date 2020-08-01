@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import TarjetaFruta from './components/TarjetaFruta/TarjetaFruta'
 import './App.css';
 
 class App extends React.Component{
@@ -32,6 +33,7 @@ class App extends React.Component{
       <div className="App">
       <h1>{this.props.name}</h1>
       <p>{this.props.price}</p>
+      <TarjetaFruta/>
     <div>Cantidad: {this.state.cantidad}</div>
     <button onClick={this.agregar}>Agregar</button>
     <button onClick={this.quitar}>Quintar</button>
